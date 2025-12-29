@@ -1,8 +1,10 @@
 #version 460
 
-/* DRAWBUFFERS:0 */
-layout(location = 0) out vec4 outColor0;
+in vec3 vaPosition;
+
+uniform mat4 modelViewMatrix;
+uniform mat4 projectionMatrix;
 
 void main() {
-  outColor0 = vec4(1);
+   gl_Position = projectionMatrix * modelViewMatrix * vec4(vaPosition,1);  
 } 
