@@ -1,5 +1,1 @@
-composite: java.lang.IllegalArgumentException: No #version directive found in source code! See debugging.md for more information.
-
-composite.vsh: composite.vsh: 0:5(144): error: `Position' undeclared
-0:5(139): error: cannot construct `vec4' from a non-numeric data type
-0:5(15): error: operands to arithmetic operators must be numer
+composite: org.antlr.v4.runtime.misc.ParseCancellationException: line 2:1 no viable alternative at input '#version'
