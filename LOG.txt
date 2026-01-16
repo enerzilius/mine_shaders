@@ -1,1 +1,1 @@
-composite: org.antlr.v4.runtime.misc.ParseCancellationException: line 2:1 no viable alternative at input '#version'
+composite: org.antlr.v4.runtime.misc.ParseCcomposite: org.antlr.v4.runtime.misc.ParseCancellationException: line 2:1 no viable alternative at input '#version'ancellationException: line 2:1 no viable alternative at input '#version'
