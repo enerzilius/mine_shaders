@@ -1,1 +1,4 @@
-composite: org.antlr.v4.runtime.misc.ParseCcomposite: org.antlr.v4.runtime.misc.ParseCancellationException: line 2:1 no viable alternative at input '#version'ancellationException: line 2:1 no viable alternative at input '#version'
+terrain_solid: terrain_solid: 0:52(82): error: `modelOffset' undeclared
+0:52(66): error: operands to arithmetic operators must be numeric
+0:52(61): error: cannot construct `vec4' from a non-numeric data type
+0:52(15): error: operands to arithmetic operators must be numeric
