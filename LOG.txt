@@ -1,4 +1,3 @@
-terrain_solid: terrain_solid: 0:52(82): error: `modelOffset' undeclared
-0:52(66): error: operands to arithmetic operators must be numeric
-0:52(61): error: cannot construct `vec4' from a non-numeric data type
-0:52(15): error: operands to arithmetic operators must be numeric
+terrain_solid: org.antlr.v4.runtime.misc.ParseCancellationException: line 13:7 no viable alternative at input 'output vec3'
+
+
