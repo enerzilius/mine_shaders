@@ -10,8 +10,8 @@ layout(location = 0) out vec4 outColor0;
 
 void main() {
   vec4 outputColor = texture(gtexture, texCoord);
-  outputColor *= foliageColor;
-
   if(outputColor.a < .1) discard;
+  if(foliageColor.a > .1) outputColor *= foliageColor;
+  
   outColor0 = outputColor;
 } 
