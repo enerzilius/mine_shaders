@@ -3,4 +3,8 @@ dh_terrain.vsh: dh_terrain.vsh: 0:62(1): error: `texCoord' undeclared
 0:63(1): error: `foliageColor' undeclared
 0:63(16): error: `vaColor' undeclared
 
-dh_terrain: org.antlr.v4.runtime.misc.ParseCancellationException: line 21:24 no viable alternative at input 'float lightBrightness clamp'
+dh_terrain: org.antlr.v4.runtime.misc.ParseCancellationException: line 21:24 no viable alternative at input 'float l
+
+ightBrightness clamp'
+
+dh_terrain: io.github.douira.glsl_transformer.parser.ParsingException: Unexpected token '*'

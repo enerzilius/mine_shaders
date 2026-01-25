@@ -20,19 +20,17 @@ void main() {
   vec3 shadowDirection = normalize(mat3(gbufferModelViewInverse) * shadowLightPosition);
   vec3 worldGeoNormal = mat3(gbufferModelViewInverse) * geoNormal;
   float lightBrightness = clamp(dot(shadowDirection, worldGeoNormal), 0.2, 1.0);
-  vec4 lightColor = pow(texture(lightmap, lightMapCoordinates), vec4(2.2));
+  vec4 lightColor = pow(texture(lightmap, vec2(0.0, lightMapCoordinates.y)), vec4(2.2));
   vec4 outputColor = pow(blockColor, vec4(2.2));
   
   if(outputColor.a < .1) discard;
-
-  //outputColor *= lightColor;
   
   vec2 depthTexCoords =  gl_FragCoord.xy / vec2(viewWidth, viewHeight);
   float depth = texture(depthtex0, depthTexCoords).r;
   
   if(depth != 1.0) discard;
 
-  outputColor *= lightBrightness;
+  outputColor *= lightColor * lightBrightness;
   
   float distanceFromCamera = distance(vec3(0), viewSpacePosition);
 
