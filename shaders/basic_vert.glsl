@@ -1,4 +1,4 @@
-#version 460
+#version 460 compatibility
 
 in vec3 vaPosition;
 in vec2 vaUV0;

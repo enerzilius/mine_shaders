@@ -1,14 +1,6 @@
-terrain_solid: org.antlr.v4.runtime.misc.ParseCancellationException: line 13:7 no viable alternative at input 'output vec3'
+dh_terrain.vsh: dh_terrain.vsh: 0:62(1): error: `texCoord' undeclared
+0:62(12): error: `vaUV0' undeclared
+0:63(1): error: `foliageColor' undeclared
+0:63(16): error: `vaColor' undeclared
 
-basic: basic: 0:40(1): error: if a fragment input is (or contains) an integer, then it must be qualified with 'flat'
-0:48(43): error: vector size mismatch for arithmetic operator
-
-
-basic: basic: 0:48(43): error: vector size mismatch for arithmetic operator
-basic: basic: 0:48(43): error: vector size mismatch for arithmetic operator
-S
-hader compilation failed, see log for details
-
-basic: basic: 0:48(43): error: vector size mismatch for arithmetic operator
-basic: basic: 0:48(43): error: vector size mismatch for arithmetic operator
-
+dh_terrain: org.antlr.v4.runtime.misc.ParseCancellationException: line 21:24 no viable alternative at input 'float lightBrightness clamp'

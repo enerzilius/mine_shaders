@@ -1,4 +1,4 @@
-#version 460
+#version 460 compatibility
 
 in vec2 texCoord;
 in vec4 foliageColor;
@@ -11,10 +11,10 @@ uniform sampler2D lightmap;
 layout(location = 0) out vec4 outColor0;
 
 void main() {
-  vec4 lightColor = texture(lightmap, lightMapCoordinates);
-  vec4 outputColor = texture(gtexture, texCoord);
+  vec4 lightColor = pow(texture(lightmap, lightMapCoordinates), vec4(2.2));;
+  vec4 outputColor = pow(texture(gtexture, texCoord), vec4(2.2));
   if(outputColor.a < .1) discard;
-  if(foliageColor.a > .1) outputColor *= foliageColor * lightColor;
-  //if(foliageColor.a > .1) outputColor *= foliageColor;
-  outColor0 = outputColor;
+  if(foliageColor.a > .1) outputColor *= pow(foliageColor,vec4(2.2)) * lightColor;
+
+  outColor0 = pow(outputColor, vec4(1/2.2));
 } 
